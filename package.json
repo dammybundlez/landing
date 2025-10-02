@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- "scripts": {
-  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && cp ./src/*.html ./dist/"
-}
-,
+"scripts": {
+  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && xcopy src\\*.html dist\\ /Y && xcopy src\\images dist\\images\\ /E /I /Y"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
