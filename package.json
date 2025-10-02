@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
-  },
+ "scripts": {
+  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && cp ./src/index.html ./dist/"
+}
+,
   "keywords": [],
   "author": "",
   "license": "ISC",
