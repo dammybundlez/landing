@@ -1,6 +1,5 @@
 module.exports = {
   content: ['./business.html', './job.html' , './event.html' ],
-  darkMode: false,
   theme: {
     extend: {
       fontFamily: {
