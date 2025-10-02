@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./business.html', './job.html' , './event.html' ],
+  content: ['./src/business.html', './src/job.html' , './src/event.html' ],
   theme: {
     extend: {
       fontFamily: {
