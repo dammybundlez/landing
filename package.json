@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && cpx \"src/*.html\" dist/ && cpx \"src/images/**/*\" dist/images"
+  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && cpx \"src/*.html\" dist/ && cpx \"src/images/**/*\" dist/images && cpx \"src/fonts/**/*\" dist/fonts"
 },
   "keywords": [],
   "author": "",
