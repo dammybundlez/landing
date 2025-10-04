@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && cpx \"src/*.html\" dist/ && cpx \"src/images/**/*\" dist/images && cpx \"src/fonts/**/*\" dist/fonts"
+  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify && cpx \"src/*.html\" dist/ && cpx \"src/images/**/*\" dist/images && cpx \"src/fonts/**/*\" dist/fonts",
+  "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
 },
   "keywords": [],
   "author": "",
