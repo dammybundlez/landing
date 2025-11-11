@@ -88,6 +88,17 @@
             <div class="flex flex-col gap-2  w-full">
                 <h3 class="font-semibold px-6 py-5 flex justify-between">Filter <span id="cancel" class="cursor-pointer"><i class="fa-solid fa-xmark"></i></span></h3>
                 <div class=" w-full px-4 py-1">
+                    <div>
+                        <div class="accordion-item">
+                            <button class="w-full flex justify-between items-center py-4 px-2 text-left font-medium focus:outline-none">
+                                <p class="flex items-center"> <span><svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 24 24" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 7.063C16.5 10.258 14.57 13 12 13c-2.572 0-4.5-2.742-4.5-5.938C7.5 3.868 9.16 2 12 2s4.5 1.867 4.5 5.063zM4.102 20.142C4.487 20.6 6.145 22 12 22c5.855 0 7.512-1.4 7.898-1.857a.416.416 0 0 0 .09-.317C19.9 18.944 19.106 15 12 15s-7.9 3.944-7.989 4.826a.416.416 0 0 0 .091.317z" fill="#000000"/></svg></span> &nbsp; Event Type</p>
+                                <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
+                            </button>
+                            <div class="accordion-content text-center max-h-0 overflow-hidden transition-all duration-300">
+                                <input type="text" placeholder="Search Event" class="bg-[#F5F5F5] w-[95%] py-2 outline-0 rounded-lg px-4">
+                            </div>
+                        </div>
+                    </div>
                     <div class="">
                         <div class="accordion-item">
                             <button class="w-full flex px-2 justify-between items-center py-4 text-left font-medium focus:outline-none">
@@ -100,43 +111,109 @@
                             </button>
                             <div class="accordion-content flex flex-col gap-3 max-h-0 overflow-hidden transition-all duration-300">
                             <div class="flex justify-between px-2">
-                                    <p>All</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
+                                    <p>Conference</p>
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer relative select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
-                                    <p>Agriculture</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
+                                    <p>Networking</p>
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer relative select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
-                                    <p>Art</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
+                                    <p>Workshop</p>
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer relative select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
-                                    <p>Boutiques</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
+                                    <p>Seminar</p>
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer relative select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
-                                    <p>Logistics</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
-                            </div>
-                            <div class="flex justify-between px-2">
-                                    <p>Construction</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
-                            </div>
-                            <div class="flex justify-between px-2">
-                                    <p>Education and Vaction</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
-                            </div>
-                            <div class="flex justify-between px-2">
-                                    <p>Electrical Appliance</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
-                            </div>
-                            <div class="flex justify-between px-2">
-                                    <p>Healthcare</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
-                            </div>
-                            <div class="bg-[#EF8C371A] py-4 px-2 text-center cursor-pointer">
-                                    <p class="text-[#EF8C37]"> <span><i class="fa-solid fa-angles-down"></i></span> &nbsp; See All Categories</p>
+                                    <p>Exhibition</p>
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer relative select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             </div>
                         </div>
@@ -164,7 +241,28 @@
                                 <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
                             </button>
                             <div class="accordion-content text-center max-h-0 overflow-hidden transition-all duration-300">
-                                <input type="text" placeholder="Enter State or City" class="bg-[#F5F5F5] w-[95%] py-2 outline-0 rounded-lg px-4">
+                                <input type="text" placeholder="City, Venue" class="bg-[#F5F5F5] w-[95%] py-2 outline-0 rounded-lg px-4">
+                                <div class="flex justify-between px-2 py-3">
+                                    <p class="font-semibold">Online Event</p>
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer relative select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-3 w-3 border-2 border-gray-400 rounded-sm bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-2 h-2 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -177,29 +275,13 @@
                                     <path d="M9.00001 0H7.00001L5.51292 4.57681L0.700554 4.57682L0.0825195 6.47893L3.97581 9.30756L2.48873 13.8843L4.10677 15.0599L8.00002 12.2313L11.8933 15.0599L13.5113 13.8843L12.0242 9.30754L15.9175 6.47892L15.2994 4.57681L10.4871 4.57681L9.00001 0Z" fill="#000000"/>
                                     </svg>
                                 </span> 
-                                &nbsp; Ratings</p>
+                                &nbsp; Event Price</p>
                                 <i class="fa-solid fa-chevron-down transition-transform duration-300"></i>
                             </button>
                             <div class="accordion-content flex flex-col gap-3 max-h-0 overflow-hidden transition-all duration-300">
-                            <div class="flex justify-between px-2">
-                                    <p>5 Stars</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
-                            </div>
-                            <div class="flex justify-between px-2">
-                                    <p>4 Stars</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
-                            </div>
-                            <div class="flex justify-between px-2">
-                                    <p>3 Stars</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
-                            </div>
-                            <div class="flex justify-between px-2">
-                                    <p>2 Stars</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
-                            </div>
-                            <div class="flex justify-between px-2">
-                                    <p>1 Star</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
+                            <div class="flex justify-between flex-col px-2 gap-2">
+                                <input type="number" placeholder="Min:" class="bg-[#F5F5F5] w-[95%] py-2 outline-0 rounded-lg px-4">
+                                <input type="number" placeholder="Max:" class="bg-[#F5F5F5] w-[95%] py-2 outline-0 rounded-lg px-4">
                             </div>
                             </div>
                         </div>
@@ -239,23 +321,108 @@
                             <div class="accordion-content flex flex-col gap-3 max-h-0 overflow-hidden transition-all duration-300">
                             <div class="flex justify-between px-2">
                                     <p>Conference</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Networking</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Workshop</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Seminar</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Exhibition</p>
-                                    <input type="checkbox" class="w-[30px] h-4  accent-orange-500 text-white" nam2="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             </div>
                         </div>
@@ -286,7 +453,24 @@
                                 <input type="text" placeholder="City, Venue" class="bg-[#F5F5F5] w-[95%] py-2 outline-0 rounded-lg px-4">
                                 <div class="flex justify-between px-2 py-3">
                                     <p class="font-semibold">Online Event</p>
-                                    <input type="checkbox" name="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-3 w-3 border-2 border-gray-400 rounded-sm bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-2 h-2 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                                 </div>
                             </div>
                         </div>
