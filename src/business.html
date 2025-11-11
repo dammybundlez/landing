@@ -82,10 +82,10 @@
         </div>
 
         <div class="w-1/5 cursor-pointer" id="filterbtn">
-            <p class="py-2 px-4 flex items-center justify-center gap-1 text-[#3E3E3E] bg-[#f5f5f5] rounded-[10px]"> <span><i class="fa-solid fa-filter"></i></span> Filter</p>
+            <p class="py-2 px-4 flex items-center justify-center relative gap-1 text-[#3E3E3E] bg-[#f5f5f5] rounded-[10px]"> <span><i class="fa-solid fa-filter"></i></span> Filter</p>
         </div>
 
-        <aside id="filter" class="lg:hidden max-w-0 overflow-hidden transition-all bg-gray-100 font-gilroy top-0 border-[#DFDFE0] border-[1px] w-[100%] absolute left-0 h-[650px] border-t-0 rounded-b-2xl">
+        <aside id="filter" class="lg:hidden max-w-0 overflow-hidden z-50 transition-all bg-gray-100 font-gilroy top-0 border-[#DFDFE0] border-[1px] w-[100%] absolute left-0 h-[650px] border-t-0 rounded-b-2xl">
             <div class="flex flex-col gap-2  w-full">
                 <h3 class="font-semibold px-6 py-5 flex justify-between">Filter <span id="cancel" class="cursor-pointer"><i class="fa-solid fa-xmark"></i></span></h3>
                 <div class=" w-full px-4 py-1">
@@ -102,39 +102,192 @@
                             <div class="accordion-content flex flex-col gap-3 max-h-0 overflow-hidden transition-all duration-300">
                             <div class="flex justify-between px-2">
                                     <p>All</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex relative items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Agriculture</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex relative items-center justify-center space-x-2 cursor-pointer select-none">
+                                        <input
+                                            type="checkbox"
+                                            class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                                checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                                relative"
+                                        />
+                                        <svg
+                                            class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="3"
+                                            viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                        </svg>
+                                    </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Art</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center relative justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Boutiques</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center relative space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Logistics</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center relative space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Construction</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center relative space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Education and Vaction</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center relative space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Electrical Appliance</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center relative space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Healthcare</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center relative space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="bg-[#EF8C371A] py-4 px-2 text-center cursor-pointer">
                                     <p class="text-[#EF8C37]"> <span><i class="fa-solid fa-angles-down"></i></span> &nbsp; See All Categories</p>
@@ -184,23 +337,108 @@
                             <div class="accordion-content flex flex-col gap-3 max-h-0 overflow-hidden transition-all duration-300">
                             <div class="flex justify-between px-2">
                                     <p>5 Stars</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center relative space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>4 Stars</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center relative space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>3 Stars</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center relative space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>2 Stars</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center relative space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>1 Star</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center relative space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-0.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             </div>
                         </div>
@@ -229,40 +467,194 @@
                             </button>
                             <div class="accordion-content flex flex-col gap-3 max-h-0 overflow-hidden transition-all duration-300">
                             <div class="flex justify-between px-2">
-                                    <p>All</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                <p class="">All<p>
+                                <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
+                                    <!-- <input type="checkbox" class="w-[20px] h-[20px] appearance-none border border-gray-400 checked:bg-orange-500 checked:border-orange-500 checked:before:content-['✔'] checked:before:text-white checked:before:flex checked:before:items-center checked:before:justify-center" name="" id=""> -->
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Agriculture</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Art</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Boutiques</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Logistics</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Construction</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Education and Vaction</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Electrical Appliance</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>Healthcare</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="bg-[#EF8C371A] py-4 px-2 text-center cursor-pointer">
                                     <p class="text-[#EF8C37]"> <span><i class="fa-solid fa-angles-down"></i></span> &nbsp; See All Categories</p>
@@ -312,23 +704,108 @@
                             <div class="accordion-content flex flex-col gap-3 max-h-0 overflow-hidden transition-all duration-300">
                             <div class="flex justify-between px-2">
                                     <p>5 Stars</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>4 Stars</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>3 Stars</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>2 Stars</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             <div class="flex justify-between px-2">
                                     <p>1 Star</p>
-                                    <input type="checkbox" class="w-[20px] h-[20px] accent-orange-500 text-white" name="" id="">
+                                    <label class="flex items-center justify-center space-x-2 cursor-pointer select-none">
+                                    <input
+                                        type="checkbox"
+                                        class="peer appearance-none h-5 w-5 border-2 border-gray-400 rounded-md bg-transparent
+                                            checked:bg-orange-500 checked:border-orange-500 transition-all duration-200
+                                            relative"
+                                    />
+                                    <svg
+                                        class="absolute right-2.5 w-4 h-4 text-white hidden peer-checked:block pointer-events-none"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="3"
+                                        viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </label>
                             </div>
                             </div>
                         </div>
@@ -347,7 +824,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[10px] sm:text-[13px] md:text-[13px] font-medium">Financial Service</p>
                     </div>
                     <p class="font-semibold flex items-center lg:text-[13px] text-[10px] sm:text-[13px] md:text-[13px] gap-1.5 text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>Ikorodu, Lagos</p>
-                    <button class="bg-[#464646] text-[#fff] lg:text-[11px] sm:text-[11px] ms:text-[11px] text-[10px]  py-2.5 rounded-full font-semibold tracking-wide font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] text-[#000] lg:text-[11px] sm:text-[11px] ms:text-[11px] text-[10px]  py-2.5 rounded-full font-semibold tracking-wide font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
                 <div class="bg-[#F5F5F5] lg:w-[23.9%] max-w-sm md:max-w-lg lg:min-w-[205px] xl:max-w-4xl  md:w-[32%] w-[48%] max-w-sm md:max-w-lg lg:min-w-[205px] p-4 border-[0.66px] font-gilroy rounded-[10px] flex flex-col gap-4 justify-between">
                     <img src="./images//4a9446d63b3a7dde8b0595402413ff0963eec39a.png" class="w-[52px] h-[52px] rounded-[6.6px] object-cover" alt="">
@@ -356,7 +833,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[10px] sm:text-[13px] md:text-[13px] font-normal">Bottled Water & Beverages</p>
                     </div>
                     <p class="font-semibold flex items-center gap-1.5 lg:text-[13px] sm:text-[13px] md:text-[13px] text-[10px] text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>Lagos, Nigeria</p>
-                    <button class="bg-[#464646] text-[#fff] lg:text-[11px] text-[10px] sm:text-[11px] md:text-[11px] font-semibold tracking-wide py-2.5 rounded-full font-medium font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] text-[#000] lg:text-[11px] text-[10px] sm:text-[11px] md:text-[11px] font-semibold tracking-wide py-2.5 rounded-full font-medium font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
                 <div class="bg-[#F5F5F5] lg:w-[23.9%] max-w-sm md:max-w-lg lg:min-w-[205px] xl:max-w-4xl    md:w-[32%] w-[48%] max-w-sm md:max-w-lg lg:min-w-[205px] p-4 border-[0.66px] font-gilroy rounded-[10px] flex flex-col justify-between gap-4">
                     <img src="./images//957bc352bf615d34af637fd83ab4299735cf70f0.jpg" class="w-[52px] h-[52px] rounded-[6.6px] object-cover" alt="">
@@ -365,7 +842,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] font-normal">Financial Service</p>
                     </div>
                     <p class="font-semibold flex  lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] items-center gap-1.5 text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>4, Badaru, Ojo, Alaba, Ojo</p>
-                    <button class="bg-[#464646] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#fff] py-2.5 rounded-full font-medium font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#000] py-2.5 rounded-full font-medium font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
                 <div class="bg-[#F5F5F5] lg:w-[23.9%] max-w-sm md:max-w-lg lg:min-w-[205px] xl:max-w-4xl  md:w-[32%] w-[48%] p-4 max-w-sm md:max-w-lg lg:min-w-[205px] border-[0.66px] font-gilroy rounded-[10px] flex flex-col justify-between gap-4">
                     <img src="./images//f6ce691ffea5e49c045f403d271d0dc5f2c283d7.jpg" class="w-[52px] h-[52px] rounded-[6.6px] object-cover" alt="">
@@ -374,7 +851,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] font-normal">Beverages</p>
                     </div>
                     <p class="font-semibold flex lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] items-center gap-1.5 text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>Lagos, Nigria</p>
-                    <button class="bg-[#464646] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#fff] py-2.5 rounded-full font-medium font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#000] py-2.5 rounded-full font-medium font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
 
                 <div class="bg-[#F5F5F5] lg:w-[23.9%]   md:w-[32%] w-[48%] max-w-sm md:max-w-lg lg:min-w-[205px] p-4 border-[0.66px] font-gilroy rounded-[10px] flex flex-col gap-4 justify-between">
@@ -384,7 +861,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[10px] sm:text-[13px] md:text-[13px] font-medium">Financial Service</p>
                     </div>
                     <p class="font-semibold flex items-center lg:text-[13px] text-[10px] sm:text-[13px] md:text-[13px] gap-1.5 text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>Ikorodu, Lagos</p>
-                    <button class="bg-[#464646] text-[#fff] lg:text-[11px] sm:text-[11px] ms:text-[11px] text-[10px]  py-2.5 rounded-full font-semibold tracking-wide font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] text-[#000] lg:text-[11px] sm:text-[11px] ms:text-[11px] text-[10px]  py-2.5 rounded-full font-semibold tracking-wide font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
                 <div class="bg-[#F5F5F5] lg:w-[23.9%]  md:w-[32%] w-[48%] max-w-sm md:max-w-lg lg:min-w-[205px] p-4 border-[0.66px] font-gilroy rounded-[10px] flex flex-col gap-4 justify-between">
                     <img src="./images//4a9446d63b3a7dde8b0595402413ff0963eec39a.png" class="w-[52px] h-[52px] rounded-[6.6px] object-cover" alt="">
@@ -393,7 +870,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[10px] sm:text-[13px] md:text-[13px] font-normal">Bottled Water & Beverages</p>
                     </div>
                     <p class="font-semibold flex items-center gap-1.5 lg:text-[13px] sm:text-[13px] md:text-[13px] text-[10px] text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>Lagos, Nigeria</p>
-                    <button class="bg-[#464646] text-[#fff] lg:text-[11px] text-[10px] sm:text-[11px] md:text-[11px] font-semibold tracking-wide py-2.5 rounded-full font-medium font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] text-[#000] lg:text-[11px] text-[10px] sm:text-[11px] md:text-[11px] font-semibold tracking-wide py-2.5 rounded-full font-medium font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
                 <div class="bg-[#F5F5F5] lg:w-[23.9%]    md:w-[32%] w-[48%] max-w-sm md:max-w-lg lg:min-w-[205px] p-4 border-[0.66px] font-gilroy rounded-[10px] flex flex-col justify-between gap-4">
                     <img src="./images//957bc352bf615d34af637fd83ab4299735cf70f0.jpg" class="w-[52px] h-[52px] rounded-[6.6px] object-cover" alt="">
@@ -402,7 +879,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] font-normal">Financial Service</p>
                     </div>
                     <p class="font-semibold flex  lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] items-center gap-1.5 text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>4, Badaru, Ojo, Alaba, Ojo</p>
-                    <button class="bg-[#464646] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#fff] py-2.5 rounded-full font-medium font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#000] py-2.5 rounded-full font-medium font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
                 <div class="bg-[#F5F5F5] lg:w-[23.9%]  md:w-[32%] w-[48%] p-4 max-w-sm md:max-w-lg lg:min-w-[205px] border-[0.66px] font-gilroy rounded-[10px] flex flex-col justify-between gap-4">
                     <img src="./images//f6ce691ffea5e49c045f403d271d0dc5f2c283d7.jpg" class="w-[52px] h-[52px] rounded-[6.6px] object-cover" alt="">
@@ -411,7 +888,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] font-normal">Beverages</p>
                     </div>
                     <p class="font-semibold flex lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] items-center gap-1.5 text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>Lagos, Nigria</p>
-                    <button class="bg-[#464646] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#fff] py-2.5 rounded-full font-medium font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#000] py-2.5 rounded-full font-medium font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
                 <div class="bg-[#F5F5F5] lg:w-[23.9%]   md:w-[32%] w-[48%] lg:max-w-sm md:max-w-lg lg:min-w-[205px] p-4 border-[0.66px] font-gilroy rounded-[10px] flex flex-col gap-4 justify-between">
                     <img src="./images/b7b7883cb07ba876943a1971890b243984b41cee.jpg" class="w-[52px] h-[52px] rounded-[6.6px] object-cover" alt="">
@@ -420,7 +897,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[10px] sm:text-[13px] md:text-[13px] font-medium">Financial Service</p>
                     </div>
                     <p class="font-semibold flex items-center lg:text-[13px] text-[10px] sm:text-[13px] md:text-[13px] gap-1.5 text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>Ikorodu, Lagos</p>
-                    <button class="bg-[#464646] text-[#fff] lg:text-[11px] sm:text-[11px] ms:text-[11px] text-[10px]  py-2.5 rounded-full font-semibold tracking-wide font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] text-[#000] lg:text-[11px] sm:text-[11px] ms:text-[11px] text-[10px]  py-2.5 rounded-full font-semibold tracking-wide font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
                 <div class="bg-[#F5F5F5] lg:w-[23.9%]  md:w-[32%] w-[48%] max-w-sm md:max-w-lg lg:min-w-[205px] p-4 border-[0.66px] font-gilroy rounded-[10px] flex flex-col gap-4 justify-between">
                     <img src="./images//4a9446d63b3a7dde8b0595402413ff0963eec39a.png" class="w-[52px] h-[52px] rounded-[6.6px] object-cover" alt="">
@@ -429,7 +906,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[10px] sm:text-[13px] md:text-[13px] font-normal">Bottled Water & Beverages</p>
                     </div>
                     <p class="font-semibold flex items-center gap-1.5 lg:text-[13px] sm:text-[13px] md:text-[13px] text-[10px] text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>Lagos, Nigeria</p>
-                    <button class="bg-[#464646] text-[#fff] lg:text-[11px] text-[10px] sm:text-[11px] md:text-[11px] font-semibold tracking-wide py-2.5 rounded-full font-medium font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] text-[#000] lg:text-[11px] text-[10px] sm:text-[11px] md:text-[11px] font-semibold tracking-wide py-2.5 rounded-full font-medium font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
                 <div class="bg-[#F5F5F5] lg:w-[23.9%]    md:w-[32%] w-[48%] max-w-sm md:max-w-lg lg:min-w-[205px] p-4 border-[0.66px] font-gilroy rounded-[10px] flex flex-col justify-between gap-4">
                     <img src="./images//957bc352bf615d34af637fd83ab4299735cf70f0.jpg" class="w-[52px] h-[52px] rounded-[6.6px] object-cover" alt="">
@@ -438,7 +915,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] font-normal">Financial Service</p>
                     </div>
                     <p class="font-semibold flex  lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] items-center gap-1.5 text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>4, Badaru, Ojo, Alaba, Ojo</p>
-                    <button class="bg-[#464646] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#fff] py-2.5 rounded-full font-medium font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#000] py-2.5 rounded-full font-medium font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
                 <div class="bg-[#F5F5F5] lg:w-[23.9%]  md:w-[32%] w-[48%] p-4 max-w-sm md:max-w-lg lg:min-w-[205px] border-[0.66px] font-gilroy rounded-[10px] flex flex-col justify-between gap-4">
                     <img src="./images//f6ce691ffea5e49c045f403d271d0dc5f2c283d7.jpg" class="w-[52px] h-[52px] rounded-[6.6px] object-cover" alt="">
@@ -447,7 +924,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] font-normal">Beverages</p>
                     </div>
                     <p class="font-semibold flex lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] items-center gap-1.5 text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>Lagos, Nigria</p>
-                    <button class="bg-[#464646] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#fff] py-2.5 rounded-full font-medium font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#000] py-2.5 rounded-full font-medium font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
                 <div class="bg-[#F5F5F5] lg:w-[23.9%]   md:w-[32%] w-[48%] lg:max-w-sm md:max-w-lg lg:min-w-[205px] p-4 border-[0.66px] font-gilroy rounded-[10px] flex flex-col gap-4 justify-between">
                     <img src="./images/b7b7883cb07ba876943a1971890b243984b41cee.jpg" class="w-[52px] h-[52px] rounded-[6.6px] object-cover" alt="">
@@ -456,7 +933,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[10px] sm:text-[13px] md:text-[13px] font-medium">Financial Service</p>
                     </div>
                     <p class="font-semibold flex items-center lg:text-[13px] text-[10px] sm:text-[13px] md:text-[13px] gap-1.5 text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>Ikorodu, Lagos</p>
-                    <button class="bg-[#464646] text-[#fff] lg:text-[11px] sm:text-[11px] ms:text-[11px] text-[10px]  py-2.5 rounded-full font-semibold tracking-wide font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] text-[#000] lg:text-[11px] sm:text-[11px] ms:text-[11px] text-[10px]  py-2.5 rounded-full font-semibold tracking-wide font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
                 <div class="bg-[#F5F5F5] lg:w-[23.9%]  md:w-[32%] w-[48%] max-w-sm md:max-w-lg lg:min-w-[205px] p-4 border-[0.66px] font-gilroy rounded-[10px] flex flex-col gap-4 justify-between">
                     <img src="./images//4a9446d63b3a7dde8b0595402413ff0963eec39a.png" class="w-[52px] h-[52px] rounded-[6.6px] object-cover" alt="">
@@ -465,7 +942,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[10px] sm:text-[13px] md:text-[13px] font-normal">Bottled Water & Beverages</p>
                     </div>
                     <p class="font-semibold flex items-center gap-1.5 lg:text-[13px] sm:text-[13px] md:text-[13px] text-[10px] text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>Lagos, Nigeria</p>
-                    <button class="bg-[#464646] text-[#fff] lg:text-[11px] text-[10px] sm:text-[11px] md:text-[11px] font-semibold tracking-wide py-2.5 rounded-full font-medium font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] text-[#000] lg:text-[11px] text-[10px] sm:text-[11px] md:text-[11px] font-semibold tracking-wide py-2.5 rounded-full font-medium font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
                 <div class="bg-[#F5F5F5] lg:w-[23.9%]    md:w-[32%] w-[48%] max-w-sm md:max-w-lg lg:min-w-[205px] p-4 border-[0.66px] font-gilroy rounded-[10px] flex flex-col justify-between gap-4">
                     <img src="./images//957bc352bf615d34af637fd83ab4299735cf70f0.jpg" class="w-[52px] h-[52px] rounded-[6.6px] object-cover" alt="">
@@ -474,7 +951,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] font-normal">Financial Service</p>
                     </div>
                     <p class="font-semibold flex  lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] items-center gap-1.5 text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>4, Badaru, Ojo, Alaba, Ojo</p>
-                    <button class="bg-[#464646] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#fff] py-2.5 rounded-full font-medium font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#000] py-2.5 rounded-full font-medium font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
                 <div class="bg-[#F5F5F5] lg:w-[23.9%]  md:w-[32%] w-[48%] p-4 max-w-sm md:max-w-lg lg:min-w-[205px] border-[0.66px] font-gilroy rounded-[10px] flex flex-col justify-between gap-4">
                     <img src="./images//f6ce691ffea5e49c045f403d271d0dc5f2c283d7.jpg" class="w-[52px] h-[52px] rounded-[6.6px] object-cover" alt="">
@@ -483,7 +960,7 @@
                         <p class="text-[#717680] lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] font-normal">Beverages</p>
                     </div>
                     <p class="font-semibold flex lg:text-[13px] text-[11px] sm:text-[13px] md:text-[13px] items-center gap-1.5 text-[#717680]" > <span class="text-[#35BB25]"><i class="fa-solid fa-location-dot"></i></span>Lagos, Nigria</p>
-                    <button class="bg-[#464646] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#fff] py-2.5 rounded-full font-medium font-gilroy">Explore <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
+                    <button class="bg-[#D7D7D7] font-semibold lg:text-[11px] sm:text-[11px] md:text-[11px] text-[10px] text-[#000] py-2.5 rounded-full font-medium font-gilroy">View <span class=" pl-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span> </button>
                 </div>
             </div>
             <div class="mt-7 flex justify-center lg:justify-between items-center">
